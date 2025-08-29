@@ -1,0 +1,129 @@
+/* featured courses */
+.single-course{
+    width: 100%;
+    height: 100%;
+    color: var(--clr-white);
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+.single-course:hover{
+    box-shadow: var(--box-shadow-dark);
+    transform: translateY(2px) scale(1.002);
+}
+.single-course .img-container{
+    aspect-ratio:355/250;
+    overflow: hidden;
+}
+.single-course .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    transition: var(--transition);
+}
+.single-course .course-title{
+    font-size: 22px;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--clr-primary);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width:992px) {
+    .single-course .img-container{
+        aspect-ratio: 396/300;
+    }
+    .single-course:hover img{
+        transform: scale(1.05) rotatez(2deg);
+    }
+
+}
+/* our campuses section styles*/
+.each-campues{
+    width: 100%;
+    border: var(--radius);
+    background: var(--clr-white);
+    box-shadow: var(--box-shadow-light);
+    transition: var(--transition);
+}
+.each-campues:hover{
+    box-shadow: var(--box-shadow-dark);
+    transform: translatey(2px) scale(1.002);
+}
+.each-campues .image-container{
+    aspect-ratio: 355/250;
+    position: relative;
+}
+.each-campues .image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+.each-campues .share-icon-campus{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+     left:50%;
+     bottom: 0%;
+    transform:translate(-50%,50%);
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: var(--transition);
+    border: 7px solid var(--clr-pink-light);
+}
+.each-campues .img-container .share-icon-campus:hover{
+    border-color: var(--clr-blue-light);
+    background:var(--clr-pink-light);
+}
+.each-campues .share-icon-campus img{
+    width: 100%;
+    height: 100%;
+    object-position: cover;
+}
+.each-campues .campus-info{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.each-campues .campus-info .campus-title{
+    font-size: 22px;
+    text-transform: capitalize;
+    color: var(--clr-primary);
+    letter-spacing: 1px;
+    
+}
+.each-campues .campus-info .desc{
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+.each-campues .campus-info .adress{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--clr-primary);
+    letter-spacing: 1px;
+    
+}
+@media screen and (min-width:992px) {
+    .each-campues .image-container{
+        aspect-ratio: 395/250;
+    }
+}

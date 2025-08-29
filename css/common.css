@@ -1,0 +1,266 @@
+/*hero page container  */
+.page-hero-container {
+    width: 100%;
+}
+.page-hero-container .hero-img-component {
+    aspect-ratio: 375/220;
+    overflow: hidden;
+}
+.page-hero-container .img-container,
+.page-hero-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page-hero-container .hero-box{
+    width: 100%;
+    background:var(--clr-primary);
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-hero-container .hero-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.page-hero-container .heading{
+    font-size: 24px;
+    color: var(--clr-white);
+    letter-spacing: 1px;
+}
+.page-hero-container .desc{
+    color: var(--clr-white);
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.page-hero-container .small-heading {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+
+@media screen and (min-width :992px)
+{
+    .page-hero-container{
+        position:relative;
+    }
+    .page-hero-container .hero-img-component {
+        aspect-ratio: 1920/700;
+        position: relative;
+    }
+    .home-page.page-hero-container .hero-img-component{
+        aspect-ratio: 1920/1080;
+        position: relative;
+    }
+     .page-hero-container .heading {
+    font-size: 64px;
+  }
+    .page-hero-container .hero-img-component::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background: var(--clr-black-80);
+
+    }
+
+    .page-hero-container .hero-box{
+    position: absolute;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    }
+    .page-hero-container .small-heading{
+        font-size: 34px;
+    }
+    .page-hero-container .home-button{
+        animation: bounceAnimation 1s linear infinite alternate;
+    }
+
+}
+/* contact promotion styles */
+.contact-promotion{
+    width: 100%;
+}
+ .contact-promotion .contact-promo-img{
+    position: relative;
+    aspect-ratio: 355/400;
+    overflow: hidden;
+    border-radius: var(--radius);
+     
+}
+.contact-promotion .contact-promo-img::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--clr-black-80);
+}
+
+.contact-promotion .contact-promo-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.contact-promotion .contact-info-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info-container .contact-heading{
+    font-size: 35px;
+    color: var(--clr-white);
+    text-transform: capitalize;
+}
+@media screen and (min-width:992px) {
+    .contact-promotion .contact-promo-img{
+        aspect-ratio: 1259/437;
+    }
+    .contact-info-container .contact-heading{
+    font-size: 45px;
+   
+}
+    
+}
+/* layout classes */
+.three-column-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:30px
+}
+@media screen and (min-width:769px) {
+    .three-column-layout{
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (min-width:992px) {
+    .three-column-layout{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    
+}
+
+
+
+/* padding classes */
+@media screen and (max-width: 991px) {
+    .paddingtop-mobile-ten{
+        padding-top: 10px !important;
+    }
+    .paddingtop-mobile-twenty{
+        padding-top: 20px !important; 
+
+    }
+    .paddingtop-mobile-thirty{
+        padding-top: 30px !important;
+    }
+    .paddingtop-mobile-forty{
+        padding-top: 40px !important;
+    }
+    .paddingtop-mobile-fifty{
+        padding-top: 50px !important;
+    }
+    .paddingbottom-mobile-ten{
+        padding-bottom: 10px !important;
+    }
+    .paddingbottom-mobile-twenty{
+        padding-bottom: 20px !important; 
+
+    }
+    .paddingbottom-mobile-thirty{
+        padding-bottom: 30px !important;
+    }
+    .paddingbottom-mobile-forty{
+        padding-bottom: 40px !important;
+    }
+    .paddingbottom-mobile-fifty{
+        padding-bottom: 50px !important;
+    }
+}
+@media screen and (min-width: 992px) {
+    .paddingtop-desktop-ten{
+        padding-top: 10px !important;
+
+    }
+
+    .paddingtop-desktop-twenty{
+        padding-top: 20px ! important;  
+
+    }
+    .paddingtop-desktop-thirty{
+        padding-top: 30px ! important; 
+    }
+    .paddingtop-desktop-forty{
+        padding-top: 40px ! important; 
+    }
+    .paddingtop-desktop-fifty{
+        padding-top: 50px ! important; 
+    }
+    .paddingtop-desktop-sixty{
+        padding-top: 60px ! important; 
+    }
+    .paddingtop-desktop-seventy{
+        padding-top: 70px ! important; 
+    }
+    .paddingtop-desktop-eighty{
+        padding-top: 80px ! important; 
+    }
+    .paddingtop-desktop-ninety{
+        padding-top: 90px ! important; 
+    }
+    .paddingtop-desktop-hundred{
+        padding-top: 100px ! important; 
+    }
+    .paddingbottom-desktop-ten{
+        padding-bottom: 10px ! important; 
+    }
+    .paddingbottom-desktop-twenty{
+        padding-bottom: 20px ! important;  
+
+    }
+    .paddingbottom-desktop-thirty{
+        padding-bottom: 30px ! important; 
+    }
+    .paddingbottom-desktop-forty{
+        padding-bottom: 40px ! important; 
+    }
+    .paddingbottom-desktop-fifty{
+        padding-bottom: 50px ! important; 
+    }
+    .paddingbottom-desktop-sixty{
+        padding-bottom: 60px ! important; 
+    }
+    .paddingbottom-desktop-seventy{
+        padding-bottom: 70px ! important; 
+    }
+    .paddingbottom-desktop-eighty{
+        padding-bottom: 80px ! important; 
+    }
+    .paddingbottom-desktop-ninety{
+        padding-bottom: 90px ! important; 
+    }
+    .paddingbottom-desktop-hundred{
+        padding-bottom: 100px ! important; 
+    }
+
+}
