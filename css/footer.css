@@ -2,8 +2,7 @@
 .footer-container{
     width: 100%;
     min-height: 300px;
-    position: relative;
-    background: url("./../assets/footer-img.jpeg") no-repeat center/cover;
+    background-color:hsl(254, 69%, 49%);
     z-index:1;
     display: flex;
     justify-content: center;

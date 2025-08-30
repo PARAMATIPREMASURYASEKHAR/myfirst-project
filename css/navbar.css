@@ -1,6 +1,6 @@
 /* nav bar styles */
 .nav-container{
-    background-color: var(--clr-black-90);
+    background-color: var(--clr-primary2);
     width: 100%;
     min-height: 50px;
     display: flex;
@@ -32,12 +32,17 @@
     display: none;
 }
 .nav-container .logo-section{
-    width: 30px;
+    width: 25px;
 }
 .nav-container .hamburger{
     width: 25px;
      display:flex;
-    justify-self: flex-end; 
+    justify-self: flex-end;
+    padding-right: 13px;
+     
+}
+.logo-section .logo{
+    width: 45px;
 }
 
 @media screen and (min-width: 992px) {
@@ -114,6 +119,10 @@
         
 
     }
+    .logo-section .logo{
+    width: 55px;
+  }
+
 
 
 

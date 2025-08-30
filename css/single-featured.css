@@ -18,14 +18,13 @@
 .single-featured-container .single-featured-text-component .about-info{
     display: flex;
     flex-direction: column;
-    gap:30px;
+    /* gap:30px; */
 
 }
 .single-featured-container .single-featured-text-component .about-info p{
     font-size: 16px;
-    letter-spacing: 1px;
     text-transform:lowercase;
-    font-family:'Times New Roman', Times, serif;
+    
 }
 .single-featured-container .single-featured-text-component .about-info .contact-us-form
 {

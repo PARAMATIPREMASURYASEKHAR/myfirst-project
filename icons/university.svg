@@ -1,1 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 512 512"><path d="M243.4 2.587C251.4-.8625 260.6-.8625 268.6 2.587L492.6 98.59C506.6 104.6 514.4 119.6 511.3 134.4C508.3 149.3 495.2 159.1 479.1 160V168C479.1 181.3 469.3 192 455.1 192H55.1C42.74 192 31.1 181.3 31.1 168V160C16.81 159.1 3.708 149.3 .6528 134.4C-2.402 119.6 5.429 104.6 19.39 98.59L243.4 2.587zM256 128C273.7 128 288 113.7 288 96C288 78.33 273.7 64 256 64C238.3 64 224 78.33 224 96C224 113.7 238.3 128 256 128zM127.1 416H167.1V224H231.1V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H31.1C17.9 512 5.458 502.8 1.372 489.3C-2.715 475.8 2.515 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 63.1 420.3V224H127.1V416z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Magical University Favicon">
+  <title>Magical University</title>
+  <desc>Round crest with a magic wand and spark, suitable as a favicon.</desc>
+
+  <!-- Background -->
+  <defs>
+    <radialGradient id="g" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#8a5cff"/>
+      <stop offset="60%" stop-color="#5b35e6"/>
+      <stop offset="100%" stop-color="#2b1b7e"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.4"/>
+    </filter>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+  <circle cx="32" cy="32" r="29.25" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Wand -->
+  <g transform="translate(0,0)">
+    <!-- Wand shaft -->
+    <path d="M19 41 L38 22" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="3"/>
+    <!-- Wand tip -->
+    <circle cx="38" cy="22" r="2.5" fill="#ffffff"/>
+    <!-- Small band on wand -->
+    <path d="M24 36 L26 34" stroke="#ffffff" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Spark (eight-point star) -->
+  <g transform="translate(43,19)">
+    <g filter="url(#soft)">
+      <path d="M0 -5 L0 5 M-5 0 L5 0 M-3.5 -3.5 L3.5 3.5 M-3.5 3.5 L3.5 -3.5"
+            stroke="#ffd166" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <circle cx="0" cy="0" r="1.5" fill="#ffd166"/>
+  </g>
+
+  <!-- Book (minimal) -->
+  <g transform="translate(16,40)">
+    <path d="M0 0 Q6 -4 12 0 Q18 -4 24 0 L24 10 Q18 6 12 10 Q6 6 0 10 Z"
+          fill="#ffffff" fill-opacity="0.9"/>
+    <path d="M12 0 L12 10" stroke="#2b1b7e" stroke-opacity="0.25" stroke-width="1"/>
+  </g>
+
+  <!-- Subtle highlights -->
+  <path d="M10 22 C14 14, 24 10, 32 10" stroke="#ffffff" stroke-opacity="0.15" stroke-width="3" fill="none"/>
+</svg>
