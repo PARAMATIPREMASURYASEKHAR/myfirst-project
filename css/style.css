@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
     --clr-primary:#5a33e6;
-    --clr-primary2: hsl(254, 85%, 55%);
+    --clr-primary2: #582bee;
     --clr-primary-light:#224ff2;
     --clr-white: #ffffff;
     --clr-white-light: #f0f0f0f3;
     --clr-shadow: #74747429;
-    --clr-black: #000000;
+    --clr-black: #000000a9;
     --clr-black-30: rgba(34, 32, 32, 0.3);
     --clr-black-80: #222020cc;
     --clr-black-90: #212020e6;
